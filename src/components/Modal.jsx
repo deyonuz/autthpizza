@@ -14,6 +14,7 @@ const Modal = ({setOpenModal, onePizza}) => {
 
                                 <h1>{onePizza.title}</h1>
                                 <p>{onePizza.description}</p>
+                                <button> Add Cart</button>
                     </div>
                     <div className="prices">
                         <h2>{onePizza.price }.000 UZS</h2>

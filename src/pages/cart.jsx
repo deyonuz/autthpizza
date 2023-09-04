@@ -12,11 +12,10 @@ const Cart = () => {
       alert("Iltimos, barcha ma'lumotlarni to'ldiring.");
     } else {
       const userData = { username, password };
-      localStorage.setItem("userData", JSON.stringify(userData));
-   
+      localStorage.setItem("userData", JSON.stringify(existingData));
       navigate("/login");
     }
-  };
+  };``
 
   return (
     <div className="container-cart">
@@ -31,7 +30,7 @@ const Cart = () => {
         <input
           type="password"
           placeholder="password"
-          value={password}
+          value={password}npm
           minLength={"3"}
           onChange={(e) => setPassword(e.target.value)}
         />
